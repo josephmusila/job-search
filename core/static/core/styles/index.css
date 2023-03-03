@@ -1,0 +1,57 @@
+.navbar-brand{
+    color: rgb(255, 140, 0) !important;
+}
+#nav-cont{
+    color: white;
+}
+.jobs-wrapper{
+    margin-top: 10px;
+}
+.jobs-title{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.item{
+    border: 1px solid rgb(178, 177, 177);
+    margin-bottom: 5px;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+.job-name{
+    color: rgb(9, 34, 192);
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+.search-bar{
+    margin-top: 60px;
+}
+.previous,.next,.current{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.previous{
+    color: green;
+}
+.current{
+    color: orange;
+}
+.next{
+    color: orangered;
+}
+.post-job-wrapper{
+    padding: 10px;
+    margin: 10px;
+}
+.post-job{
+    background-color: rgb(190, 162, 35);
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 10px;
+}

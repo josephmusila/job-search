@@ -1,0 +1,23 @@
+<div class="job-item">
+    {% for job in page_obj.object_list %}
+    <div class="item">
+        <p class="job-name">{{job.id}}. {{job.name}}
+            <button class="btn btn-warning"> See Details</button>
+        </p>
+        <hr>
+        <p class="job-description">{{job.description}}</p>
+    </div>
+
+    
+    {% endfor %}
+    <center>
+        {%if page_obj.has_previous %} {# whether the previous page exists #}
+            <a href="?page={{page_obj.previous_page_number}}" class="previous">  ⏮</a> 
+        {% endif %}
+        <span class="current">   {{page_obj.number}}  </span> 
+        
+        {%if page_obj.has_next %} {# whether the next page exists #}
+            <a href="?page={{page_obj.next_page_number}}" class="next">  ⏭</a> 
+        {% endif %}
+    </center>
+</div>
